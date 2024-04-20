@@ -1,0 +1,35 @@
+.body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0d0c0c;
+  color: #FFFFFF;
+  line-height: 1.6;
+  /* Improve readability by increasing line height */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+}
+
+/* Enhance responsiveness and text readability on smaller screens */
+@media (max-width: 768px) {
+  .body {
+    padding: 15px;
+    /* Add padding to prevent text from touching the edges on small screens */
+    text-align: center;
+    /* Center text for better readability on small devices */
+  }
+}
+
+/* Optionally, add a transition for smoother color changes */
+.body {
+  transition: background-color 0.3s, color 0.3s;
+}
